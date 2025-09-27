@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const main = document.getElementById("main");
 
   setTimeout(() => {
-    intro.classList.add("hidden");
+    intro.style.display = "none";
     main.classList.remove("hidden");
-  }, 3000);
+  }, 5000); // بعد 5 ثواني يختفي الانترو
 
   const fileInput = document.getElementById("fileInput");
   const dataTable = document.getElementById("dataTable").querySelector("tbody");
