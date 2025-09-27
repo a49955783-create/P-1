@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تحديث مركز العمليات للشرطة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Intro -->
+  <div id="intro">
+    <h1>🚔 شرطة ريسبكت 🚔</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main" class="hidden">
+    <header>
+      <h2>تحديث مركز العمليات للشرطة</h2>
+    </header>
+
+    <section class="upload">
+      <p>اسحب وأفلت صورة هنا، أو الصقها بـ <b>Ctrl+V</b></p>
+      <input type="file" id="fileInput" accept="image/*">
+    </section>
+
+    <section class="results">
+      <table id="dataTable">
+        <thead>
+          <tr><th>الاسم</th><th>الكود</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button id="addRow">➕ إضافة / تعديل</button>
+    </section>
+
+    <section id="finalOutput" class="output hidden"></section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

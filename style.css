@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  background: #0d1117;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  padding: 1rem;
+  background: #111827;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin: 0;
+}
+
+#intro {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.hidden { display: none; }
+
+.upload {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px dashed #6b7280;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.upload input {
+  margin-top: 10px;
+}
+
+.results table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 600px;
+}
+
+.results th, .results td {
+  border: 1px solid #6b7280;
+  padding: 8px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+.output {
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #6b7280;
+  width: 90%;
+  max-width: 600px;
+  text-align: right;
+  background: #1f2937;
+  border-radius: 10px;
+  white-space: pre-line;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .results table, .output {
+    font-size: 14px;
+  }
+}
